@@ -3,7 +3,9 @@ import eventBus from "../basic/EventBus.js";
 
 class Contact extends Component {
     beforeAppendChild() {
-        document.head.querySelector('title').innerHTML = 'Contact'
+        setTimeout(() => {
+            document.head.querySelector('title').innerHTML = 'Contact'
+        }, 10);
         this.done = false
     }
     addEventListener() { return ['click'] }

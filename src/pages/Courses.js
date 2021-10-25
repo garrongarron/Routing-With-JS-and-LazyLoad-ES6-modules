@@ -3,7 +3,9 @@ import eventBus from "../basic/EventBus.js";
 
 class Courses extends Component {
     beforeAppendChild() {
-        document.head.querySelector('title').innerHTML = 'Courses'
+        setTimeout(() => {
+            document.head.querySelector('title').innerHTML = 'Courses'
+        })
         this.done = false
     }
     addEventListener() { return ['click'] }

@@ -3,7 +3,9 @@ import eventBus from "../basic/EventBus.js";
 
 class Landing extends Component {
     beforeAppendChild() {
-        document.head.querySelector('title').innerHTML = 'Landing'
+        setTimeout(() => {
+            document.head.querySelector('title').innerHTML = 'Landing'
+        })
         this.done = false
     }
     addEventListener() { return ['click'] }
